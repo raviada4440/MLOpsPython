@@ -9,9 +9,6 @@ parameters:
 
 pr: none
 
-pool:
-  name: "Default"
-
 # Trigger this pipeline on model-train pipeline completion
 resources:
   containers:
@@ -40,7 +37,7 @@ variables:
 - group: devopsforai-aml-vg
 
 pool:
-  vmImage: ubuntu-latest
+  name: "Default"
 
 stages:
 - stage: 'Batch_Scoring_Pipeline_CI'
