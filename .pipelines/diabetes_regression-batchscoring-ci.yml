@@ -9,6 +9,9 @@ parameters:
 
 pr: none
 
+pool:
+  name: "Default"
+
 # Trigger this pipeline on model-train pipeline completion
 resources:
   containers:
