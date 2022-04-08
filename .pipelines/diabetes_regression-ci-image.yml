@@ -20,7 +20,7 @@ trigger:
     - diabetes_regression/scoring/deployment_config_aks.yml
 
 pool: 
-  vmImage: 'ubuntu-latest'
+  name: 'Default'
 
 container: mlops
 

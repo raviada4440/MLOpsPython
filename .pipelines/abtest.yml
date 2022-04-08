@@ -37,7 +37,7 @@ stages:
   - job: "Build_Scoring_image"
     timeoutInMinutes: 0
     pool:
-      vmImage: 'ubuntu-latest'
+      name: 'Default'
     container: mlops
     steps:
     - task: AzureCLI@1
